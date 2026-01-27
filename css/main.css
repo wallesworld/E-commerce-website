@@ -1,0 +1,46 @@
+body {
+    margin: 0px;
+}
+
+nav {
+    background-color: rgb(245, 227, 245);
+    padding: 1vw;
+}
+
+ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around; 
+}
+
+li {
+   list-style: none; 
+   padding: 1vw;
+   border: 2px solid rgb(241, 183, 240);
+   border-radius: 1vw;
+   background-color: rgb(249, 244, 230);
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a:hover {
+    color: rgb(210, 37, 181);
+}
+
+main {
+    padding: 1vw;
+}
+
+.headImage {
+    width: 100%;
+}
+
+footer {
+    background-color: rgb(194, 182, 175);
+    padding: 5vw;
+    margin-top: 100%;
+    text-align: center;
+}
