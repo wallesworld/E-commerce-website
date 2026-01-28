@@ -3,8 +3,9 @@ body {
 }
 
 nav {
-    background-color: rgb(200, 215, 198);
+    background-color: rgb(60, 44, 35);
     padding: 1vw;
+    text-decoration-color: black; 
 }
 
 ul {
@@ -17,13 +18,14 @@ li {
    list-style: none; 
    padding: 1vw;
    border: 2px solid rgb(255, 255, 255);
-   border-radius: 1vw;
-   background-color: rgb(234, 245, 234);
+   border-radius: 0.5vw;
+   stroke: 1px;
+   background-color: rgb(180, 156, 143);
 }
 
 a {
     text-decoration: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Times New Roman', Times, serif
 }
 
 a:hover {
@@ -36,12 +38,14 @@ main {
 
 p {
     text-align: center;
+    font-size: 15pt;
 }
 
 h2 {
     text-align: center;
 }
 
+/* Inspiration from mdn page */ 
 .homePageImages {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr;
