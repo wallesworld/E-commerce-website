@@ -45,10 +45,26 @@ h2 {
 .homePageImages {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px; 
+    padding: 10px;
+} 
+
+/* Help from Google Gemini with the images to align in desktop & mobile */
+.homePageImages img {
+    width: 100%; /* Picture takes up the whole width of their grid */
+    height: auto; /* Keeps the proportions */ 
+}
+
+/* Inspiration from https://www.youtube.com/watch?v=UUjNEMXZA-k */
+@media (max-width: 600px) {
+    .homePageImages {
+        grid-template-columns: 1fr;
+    }
 }
 
 .headImage {
     width: 100%;
+    display: block;
 }
 
 footer {
