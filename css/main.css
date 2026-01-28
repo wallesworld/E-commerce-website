@@ -3,7 +3,7 @@ body {
 }
 
 nav {
-    background-color: rgb(245, 227, 245);
+    background-color: rgb(200, 215, 198);
     padding: 1vw;
 }
 
@@ -16,9 +16,9 @@ ul {
 li {
    list-style: none; 
    padding: 1vw;
-   border: 2px solid rgb(241, 183, 240);
+   border: 2px solid rgb(255, 255, 255);
    border-radius: 1vw;
-   background-color: rgb(249, 244, 230);
+   background-color: rgb(234, 245, 234);
 }
 
 a {
@@ -32,6 +32,19 @@ a:hover {
 
 main {
     padding: 1vw;
+}
+
+p {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.homePageImages {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .headImage {
