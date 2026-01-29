@@ -5,7 +5,7 @@ body {
 nav {
     background-color: rgb(75, 61, 53);
     padding: 1vw;
-    text-decoration-color: black; 
+    text-decoration-color: rgb(255, 255, 255); 
 }
 
 ul {
@@ -17,6 +17,7 @@ ul {
 li {
    list-style: none; 
    padding: 1vw;
+   
    border: 2px solid rgb(255, 255, 255);
    border-radius: 0.5vw;
    stroke: 1px;
@@ -87,3 +88,13 @@ footer {
     margin-top: 100%;
     text-align: center;
 }
+
+/*
+.homePageImages {
+    transition: transform 0.3s ease, filter 0.3s ease; 
+}
+
+.homePageImages:hover {
+    transform: scale(1.05)
+}
+*/ 
