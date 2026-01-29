@@ -3,7 +3,7 @@ body {
 }
 
 nav {
-    background-color: rgb(60, 44, 35);
+    background-color: rgb(75, 61, 53);
     padding: 1vw;
     text-decoration-color: black; 
 }
@@ -20,7 +20,7 @@ li {
    border: 2px solid rgb(255, 255, 255);
    border-radius: 0.5vw;
    stroke: 1px;
-   background-color: rgb(180, 156, 143);
+   background-color: rgb(249, 210, 216); 
 }
 
 a {
@@ -39,6 +39,13 @@ main {
 p {
     text-align: center;
     font-size: 15pt;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(249, 210, 216);
+    /* How to do shadow on text from mdn page */
+    text-shadow: 1px 1px 2px rgb(144, 62, 76);
 }
 
 h2 {
