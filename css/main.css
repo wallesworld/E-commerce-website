@@ -27,10 +27,6 @@ nav {
     display: block;
 }
 
-.icon-img:hover {
-    opacity: 1;
-}
-
 ul {
     display: flex;
     flex-flow: row;
