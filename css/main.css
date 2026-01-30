@@ -43,6 +43,11 @@ a {
     font-family:'Times New Roman', Times, serif
 }
 
+/* Google Gemini */
+a, a:visited {
+    color: black;
+}
+
 a:hover {
     color: rgb(210, 37, 181);
 }
@@ -78,7 +83,7 @@ h1 {
 
     /* Google Gemini helped with the shadow around image */
     border-radius: 15px;
-    box-shadow: 0px 4px 20px rgba(210, 37, 181, 0.4);
+    box-shadow: 0px 4px 20px rgba(244, 162, 231, 0.4);
 }
 
 h2 {
