@@ -8,6 +8,29 @@ nav {
     text-decoration-color: rgb(255, 255, 255); 
 }
 
+nav {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(75, 61, 53);
+    padding: 10px 20px;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon-img {
+    width: 25px;
+    height: auto;
+    display: block;
+}
+
+.icon-img:hover {
+    opacity: 1;
+}
+
 ul {
     display: flex;
     flex-flow: row;
