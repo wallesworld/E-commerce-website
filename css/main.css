@@ -154,6 +154,12 @@ footer {
     padding: 20px;
 }
 
+.product-grid h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    width: 100%;
+}
+
 .product-card {
     display: grid;
     border: 1px solid rgb(238, 238, 238);
