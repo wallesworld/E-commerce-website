@@ -61,6 +61,14 @@ p {
     font-size: 15pt;
 }
 
+.about-us {
+    font-size: 12pt;
+    line-height: 1.5;
+    margin: 60px auto;
+    text-align: center;
+    
+}
+
 h1 {
     text-align: center;
     color: rgb(249, 210, 216);
