@@ -61,12 +61,25 @@ p {
     font-size: 15pt;
 }
 
-.about-us {
-    font-size: 12pt;
-    line-height: 1.5;
-    margin: 60px auto;
-    text-align: center;
+.about-us li {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    padding: 20px;
+}
 
+.about-us p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.about-us img {
+    width: 100%;
+    height: auto;
+    border-radius: center;
 }
 
 h1 {
@@ -111,16 +124,6 @@ h2 {
     width: 100%; /* Picture takes up the whole width of their grid */
     height: auto; /* Keeps the proportions */ 
 }
-
-/*
-Inspiration from https://www.youtube.com/watch?v=UUjNEMXZA-k */
-/*
-@media (max-width: 600px) {
-    .homePageImages {
-        grid-template-columns: 1fr;
-    }
-}
-*/
 
 .headImage {
     width: 100%;
