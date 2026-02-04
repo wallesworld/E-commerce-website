@@ -61,6 +61,13 @@ p {
     font-size: 15pt;
 }
 
+.about-us{
+    display: grid;
+    justify-content: center;
+    padding: 0; 
+    margin: 20px auto; 
+}
+
 .about-us li {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -71,7 +78,7 @@ p {
 }
 
 .about-us p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     text-align: left;
 }
