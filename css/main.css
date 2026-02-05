@@ -91,9 +91,9 @@ p {
 
 h1 {
     text-align: center;
-    color: rgb(249, 210, 216);
+    color: rgb(94, 57, 39);
     /* How to do shadow on text from mdn page */
-    text-shadow: 1px 1px 2px rgb(144, 62, 76);
+    text-shadow: 1px 1px 2px rgb(74, 56, 41);
 }
 
 .newLaunch {
