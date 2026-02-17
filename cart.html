@@ -1,0 +1,65 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEVORA</title> 
+    <link rel="stylesheet" href="css/main.css"> 
+</head>
+<body>
+
+<header> 
+    <img src="images/headImage.png" alt="AEVORA logo" class="headImage">
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="products.html">PRODUCTS</a></li>
+            <li><a href="...">MOODBOARD</a></li>
+            <li><a href="...">ABOUT</a></li>
+            <li><a href="...">CONTACT</a></li>
+        </ul> 
+
+    <div class="nav-icons">
+        <a href="#"> <img src="images/whiteHeart.png" alt="Favorites" class="icon-img"> </a>
+        <a href="cart.html"> <img src="images/cart.png" alt="Shopping Cart" class="icon-img"> </a>
+        <a href="#"> <img src="images/profile.svg" alt="Profile" class="icon-img"> </a>
+    </div>
+    </nav>
+</header>
+
+
+<main class="cart-container"> 
+    <section class="cart-items-section">
+        <h1 class="shopping-cart"> Shopping Cart </h1> 
+        
+        <div class="cart-menu">
+            <p> Products </p>
+            <p> Description </p>
+            <p> Quantity </p>
+            <p> Price </p>
+            <p> Delete </p>
+        </div>
+        <hr>
+
+        <div id="cart-display"></div>
+    </section>
+
+    <aside class="order-summary">
+        <h2> Order Summary </h2>
+        <hr> 
+        <div class="summary-line">
+            <span> Shipping </span>
+            <span> 49 SEK </span>
+        </div>
+        <hr>
+        <div class="total-line">
+            <span> Total </span>
+            <span id="cart-total-price"> 0 SEK </span>
+        </div>
+        <button class="checkout-btn"> Checkout </button>
+    </aside>
+</main>
+
+<script src="js/script.js"></script>
+
+<footer>
+    <p>&copy; 2026 AEVORA</p>
+</footer>

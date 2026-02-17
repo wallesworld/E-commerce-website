@@ -67,7 +67,7 @@ main {
     font-family: fantasy; 
 }
 
-h1 {
+.launch-title {
     text-align: center;
     color: rgb(94, 57, 39);
     /* How to do shadow on text from mdn page */
@@ -124,11 +124,22 @@ h2 {
 .intro-text h2 {
     text-align: left;
     margin-bottom: 15px;
-}
+    }
+
+    .intro-text h3 {
+        font-family: "Libre Caslon Display", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-weight: bold; 
+        font-size: large;
+    }
 
 @media screen and (max-width: 850px) {
     .intro-section {
         grid-template-columns: 1fr;
+        font-family: "Libre Caslon Display", serif;
+        font-weight: 400;
+        font-style: normal;
     }
 
     .intro-text {
@@ -159,7 +170,7 @@ footer {
 }
 
 
-/* CSS for products page */ 
+/* CSS FOR PRODUCTS PAGE */ 
 
 .product-grid {
     display: grid;
@@ -214,3 +225,76 @@ footer {
     color: white;
 }
 
+/* CSS FOR SHOPPING CART PAGE */
+.shopping-cart {
+  font-family: "Libre Caslon Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  margin-left: 10;
+
+  /* Help from Gemini because my font didn't work */
+  -webkit-font-smoothing: antialiased;
+}
+
+.cart-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    gap: 20px; 
+    padding: 10px 40px;
+    text-align: center;
+
+    font-family: "Libre Caslon Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.cart-menu p {
+    margin: 0;
+}
+
+.cart-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+    align-items: start;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.order-summary h2 {
+    font-size: 20pt;
+    font-family: "Libre Caslon Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.summary-line span {
+    font-size: 8pt;
+    font-family: "Libre Caslon Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
+}
+
+#cart-total-price {
+    font-weight: bold;
+    font-family: "Libre Caslon Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.total-line {
+    background-color: #EBE4DE;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
