@@ -238,10 +238,10 @@ h2 {
     }
 }
 
-.headImage {
+/* .headImage {
     width: 100%;
     display: block;
-}
+} */
 
 h3 {
     font-family: Arial, Helvetica, sans-serif;
@@ -385,4 +385,41 @@ footer {
     padding: 15px;
     display: flex;
     justify-content: space-between;
+}
+
+/* CSS FOR ABOUT PAGE */
+.faq {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.faq-title {
+    font-family: "Libre Caslon Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+details {
+    border-bottom: 1px solid rgb(238, 238, 238);
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+summary {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    list-style: none;
+}
+
+details p {
+    margin-top: 15px;
+    color: rgb(69, 69, 69);
+    line-height: 1.6;
 }
