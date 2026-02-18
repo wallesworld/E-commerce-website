@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    /* background-image: url(/images/water.jpg); */
 }
 
 header {
@@ -7,11 +8,15 @@ header {
     top: 0;
 }
 
+.aevora-title {
+    color: rgb(75, 61, 53);
+
+}
 nav {
     display: flex; 
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(75, 61, 53);
+    background-color: rgb(248, 232, 167);
     padding: 10px 20px;
 }
 
@@ -40,7 +45,7 @@ li {
    
    border: 2px solid rgb(255, 255, 255);
    border-radius: 0.5vw;
-   background-color: rgb(231, 209, 212); 
+   background-color: rgb(251, 222, 240); 
 }
 
 a {
@@ -72,6 +77,11 @@ main {
     color: rgb(94, 57, 39);
     /* How to do shadow on text from mdn page */
     text-shadow: 1px 1px 2px rgb(74, 56, 41);
+    font-family: "Libre Caslon Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
 }
 
 .newLaunch {
@@ -82,7 +92,7 @@ main {
 
 .newLaunch img {
     width: 100%;
-    max-width: 1000px;
+    max-width: 700px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -92,8 +102,85 @@ main {
     box-shadow: 0px 4px 20px rgba(244, 162, 231, 0.4);
 }
 
-h2 {
+.newLaunch img:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+
+.reviews {
+    padding: 60px 20px;
+    background-color: rgb(255, 251, 226);
+}
+
+.reviews-title {
     text-align: center;
+    font-family: "Libre Caslon Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.review-card {
+    background-color: rgb(239, 252, 235);
+    border: 2px solid #a3a38a;
+    border-radius: 20px;
+    padding: 3opx;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 250px;
+}
+
+.stars {
+    color: #a3a38a;
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+.review-text {
+    font-family: "Libre Caslon Display", serif;
+    font-weight: 400;
+    font-style: italic;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: rgb(68, 68, 68);
+}
+
+.review-handle {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: rgb(68, 68, 68);
+}
+
+@media (max-width: 800px) {
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+h2 {
+    font-size: 25pt;
+    text-align: center;
+    font-family: "Libre Caslon Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
 }
 
 .intro-section {
@@ -163,10 +250,11 @@ h3 {
 }
 
 footer {
-    background-color: rgb(194, 182, 175);
+    background-color: rgb(248, 232, 167);
     padding: 5vw;
     margin-top: 2%;
     text-align: center;
+    color: white;
 }
 
 
