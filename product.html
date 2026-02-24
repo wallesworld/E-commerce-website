@@ -2,7 +2,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AEVORA</title> 
-    <link rel="stylesheet" href="css/main.css"> 
+    <link rel="stylesheet" href="css/main.css">
+    <script src="script.js" defer></script>
 </head>
 
 <header> 
@@ -47,7 +48,9 @@
         <p class="product-size"> 30 ml </p>
         <p class="product-price-large"> 249 SEK </p>
 
-        <button class="add-to-cart-btn"> ADD TO CART </button>
+        <button class="add-to-cart-btn" onclick="addToCart('Serum ', 249, 'images/serummockup.png')"> 
+        ADD TO CART 
+        </button>
 
         <div class="product-meta">
         <details>
@@ -61,6 +64,8 @@
     </div>
 </div>
 </main>
+
+<div id="cart-notification" class="cart-notification"></div>
 
 <footer>
     <p>&copy; 2026 AEVORA</p>

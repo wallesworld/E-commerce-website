@@ -7,7 +7,7 @@ function renderCart() {
     const totalDisplay = document.getElementById("cart-total-price"); 
 
 
-    //Om vi inte är på cart.html sidan så avbryter funktionen 
+//Om vi inte är på cart.html sidan så avbryter funktionen 
     if (!output) return; 
 
     output.innerHTML = ""; // Rensa listan innan vi ritar
@@ -18,26 +18,37 @@ function renderCart() {
         totalSum += productTotal; 
 
 
-    // Skapar HTML-koden för varje produkt som läggs till 
+// Skapar HTML-koden för varje produkt som läggs till 
     output.innerHTML += `
-        <div class="cart-product-row"> 
-            <img src="${product.image}" class="cart-img" alt="${product.name}">
-            <p>${product.name}</p> 
-            <div class="quantity-ctrl">
-                <button onclick="updateQuantity(${index}, -1)">-</button>
-                <span>${product.quantity}</span>
-                <button onclick="updateQuantity(${index}, 1)">+</button>
+        <div class="cart-product-row cart-grid-shared"> 
+            <div class="cart-col-img">
+                <img src="${product.image}" class="cart-img" alt="${product.name}">
             </div>
-            <p>${productTotal} SEK</p> 
-            <p class="delete-btn" onclick="removeItem(${index})">x</p>
+            <div class="cart-col-desc">
+                <p>${product.name}</p> 
+            </div>
+            <div class="cart-sol-qty">
+                <div class="quantity-ctrl">
+                    <button onclick="updateQuantity(${index}, -1)">-</button>
+                    <span>${product.quantity}</span>
+                    <button onclick="updateQuantity(${index}, 1)">+</button>
+                </div>
+            </div>
+                <p>${productTotal} SEK</p> 
+            <p class="delete-btn" onclick="removeItem(${index})">
+                <img src="images/trashCan.png" alt="Delete" class="delete-icon">
+            </p>
         </div>
         <hr>
     `; 
     });
 
-    // Uppdatera totalsumman och lägg till 49 kr frakt om vagnen inte är tom
+// Uppdatera totalsumman och lägg till 49 kr frakt om vagnen inte är tom
+if (totalDisplay) {
     const shipping = cart.length > 0 ? 49 : 0; 
     totalDisplay.innerText = (totalSum + shipping) + "SEK"; 
+
+    }
 }
 
 // Funktion för att ändra antal (+ / -)
@@ -62,5 +73,30 @@ function saveCart() {
     renderCart(); 
 }
 
-// Kör igång allting när sidan laddas 
+window.addToCart = (name, price, image) => {
+    const existingProduct = cart.find(item => item.name === name); 
+
+    if (existingProduct) {
+        existingProduct.quantity += 1;
+    } else {
+        cart.push({
+            name: name, 
+            price: price,
+            image: image,
+            quantity: 1
+        });
+    }
+
+    saveCart();
+    const notification = document.getElementById("cart-notification");
+    if(notification) {
+        notification.innerText = name + " Added to cart! ";
+        notification.style.display = "block";
+
+        setTimeout(() => {
+            notification.style.display = "none";
+        }, 3000);
+    };
+};
+
 renderCart(); 
