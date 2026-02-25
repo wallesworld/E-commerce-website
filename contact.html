@@ -7,11 +7,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
-
-
     <link rel="stylesheet" href="css/main.css"> 
     <script src="script.js" defer></script>
 </head>
@@ -19,14 +14,21 @@
 
 <header> 
     <nav>
-        <a href="index.html" class="title-link">
-        <h1 class="aevora-title"> AEVORA </h1>
-        </a>
-        <ul class="nav-links">
-            <li><a href="products.html">PRODUCTS</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul> 
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    <a href="index.html" class="title-link">
+            <h1 class="aevora-title"> AEVORA </h1>
+    </a>
+
+    <ul class="nav-links" id="nav-links">
+        <li><a href="products.html"> PRODUCTS </a></li>
+        <li><a href="about.html"> ABOUT </a></li>
+        <li><a href="contact.html"> CONTACT </a></li>
+    </ul>
 
     <div class="nav-icons">
         <a href="#"> <img src="images/whiteHeart.png" alt="Favorites" class="icon-img"> </a>

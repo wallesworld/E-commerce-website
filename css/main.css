@@ -34,7 +34,7 @@ nav {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background-color: rgb(75, 61, 53);
+    background-color: rgb(255, 255, 255);
     transition: 0.3s;
 }
 
@@ -103,7 +103,7 @@ nav {
     height: 100vh;
     width: 70%;
     flex-direction: column;
-    background-color: rgb(254, 214, 247);
+    background-color: rgb(249, 210, 216);
     justify-content: center;
     align-items: center;
     transition: 0.4s ease-in-out;
