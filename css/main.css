@@ -80,6 +80,7 @@ nav {
     }
 
     .title-link {
+        order: 2;
         flex: 2;
         text-align: center;
         display: flex;
@@ -90,10 +91,6 @@ nav {
         order: 3;
         flex: 1;
         justify-content: flex-end;
-    }
-
-    .title-link {
-        order: 2;
     }
 
     .nav-links {
