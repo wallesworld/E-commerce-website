@@ -1,13 +1,13 @@
-//HÄmtar kundvagnen från localStorage
+// Gets cart from localStorage HÄmtar kundvagnen från localStorage
 let cart = JSON.parse(localStorage.getItem("aevora_cart")) || [];
 
-// Funktion för att rita upp innehållet på skärmen 
+// Function to sketch up the content on the screen Funktion för att rita upp innehållet på skärmen 
 function renderCart() {
     const output = document.getElementById("cart-display");
     const totalDisplay = document.getElementById("cart-total-price"); 
 
 
-//Om vi inte är på cart.html sidan så avbryter funktionen 
+// If we're not on the cart.html page, the function will stop 
     if (!output) return; 
 
     output.innerHTML = ""; // Rensa listan innan vi ritar
@@ -18,7 +18,7 @@ function renderCart() {
         totalSum += productTotal; 
 
 
-// Skapar HTML-koden för varje produkt som läggs till 
+// Creates the HTML-code for each product that is being added 
     output.innerHTML += `
         <div class="cart-product-row cart-grid-shared"> 
             <div class="cart-col-img">
@@ -43,7 +43,7 @@ function renderCart() {
     `; 
     });
 
-// Uppdatera totalsumman och lägg till 49 kr frakt om vagnen inte är tom
+// Update the total sum and add 49 kr for shipping if the cart isn't empty 
 if (totalDisplay) {
     const shipping = cart.length > 0 ? 49 : 0; 
     totalDisplay.innerText = (totalSum + shipping) + "SEK"; 
@@ -51,28 +51,29 @@ if (totalDisplay) {
     }
 }
 
-// Funktion för att ändra antal (+ / -)
+// Function to change the quantity (+ / -) 
 window.updateQuantity = (index, change) => {
     cart[index].quantity += change; 
 
-    //Förhindra att man har o produkter 
+    // Prevent that you have 0 products 
     if (cart[index].quantity < 1) cart[index].quantity = 1; 
 
     saveCart(); 
 }; 
 
-// Funktion för att ta bort en produkt helt 
+// Function to delete a product 
 window.removeItem = (index) => {
-    cart.splice(index, 1); // Tar bort 1 objekt på vald plats 
+    cart.splice(index, 1); // Deletes 1 object 
     saveCart(); 
 }; 
 
-// Hjälpfunktion för att spara och ladda om 
+// Helpfunction to save and reload 
 function saveCart() {
+    // Converts the "cart" array into a JSON string and saves it to localStorage 
     localStorage.setItem("aevora_cart", JSON.stringify(cart)); 
     renderCart(); 
 }
-
+// Adds a prooduct to the cart array. This is an arrow function attached to the "window" object to make it globally accessible
 window.addToCart = (name, price, image) => {
     const existingProduct = cart.find(item => item.name === name); 
 
@@ -87,23 +88,33 @@ window.addToCart = (name, price, image) => {
         });
     }
 
+    // Save the new state to localStorage 
     saveCart();
+
+    // Selecting the notification element from the DOM 
     const notification = document.getElementById("cart-notification");
+    
     if(notification) {
+        // Change the visible text to confirm the action 
         notification.innerText = name + " Added to cart! ";
+        // Make the notification visible 
         notification.style.display = "block";
 
+        // Asynchronous JS: Hide the notification again after 3000ms (3 seconds)
         setTimeout(() => {
             notification.style.display = "none";
         }, 3000);
     };
 };
 
+// Initial call to display the cart items when the page first loads 
 renderCart(); 
 
+// Getting the hamburger button and the menu links 
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('nav-links');
 
+// Checks if the elements exist before adding listeners 
 if (hamburger && navLinks) {
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('active');
