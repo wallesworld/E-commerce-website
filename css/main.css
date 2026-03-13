@@ -140,14 +140,14 @@ a {
 a, a:visited {
     color: black;
 }
-/* MDN page */
+/* Inspiration from MDN page */
 a:hover {
     color: rgb(210, 37, 181);
 }
 
 .welcome-text {
     text-align: center;
-    font-size: 12pt;
+    font-size: 1rem;
     font-family: fantasy; 
 }
 
@@ -164,7 +164,6 @@ a:hover {
     object-position: center 40%;
     display: block;
 }
-
 
 .launch-title {
     text-align: center;
@@ -268,7 +267,7 @@ a:hover {
 }
 
 h2 {
-    font-size: 25pt;
+    font-size: 2rem;
     text-align: center;
     font-family: "Libre Caslon Display", serif;
     font-weight: 400;
@@ -540,9 +539,10 @@ footer p {
     font-style: normal;
     letter-spacing: 1px;
     -webkit-font-smoothing: antialiased;
-    animation: fadeInOut 3s forwards;
+    animation: fadeInOut 2s forwards;
 }
 
+/* Help from Gemini */ 
 @keyframes fadeInOut {
     0% {opacity: 0; transform: translateY(-10px);}
     10% {opacity: 1; transform: translateY(0);}
@@ -598,7 +598,7 @@ footer p {
 }
 
 .order-summary h2 {
-    font-size: 20pt;
+    font-size: 1.5rem;
     font-family: "Libre Caslon Display", serif;
     font-weight: 400;
     font-style: normal;
@@ -607,7 +607,7 @@ footer p {
 }
 
 .summary-line span {
-    font-size: 8pt;
+    font-size: 0.9rem;
     font-family: "Libre Caslon Display", serif;
     font-weight: 400;
     font-style: normal;
@@ -680,7 +680,7 @@ footer p {
     font-family: "Libre Caslon Display", serif;
     font-weight: bold;
     font-style: normal;
-    font-size: 12pt;
+    font-size: 1rem;
     letter-spacing: 1px;
     -webkit-font-smoothing: antialiased;
     border: none;

@@ -10,7 +10,7 @@ function renderCart() {
 // If we're not on the cart.html page, the function will stop 
     if (!output) return; 
 
-    output.innerHTML = ""; // Rensa listan innan vi ritar
+    output.innerHTML = ""; // Clear the list before we draw 
     let totalSum = 0; 
     
     cart.forEach((product, index) => {
@@ -95,7 +95,6 @@ window.addToCart = (name, price, image) => {
     const notification = document.getElementById("cart-notification");
     
     if(notification) {
-        // Change the visible text to confirm the action 
         notification.innerText = name + " Added to cart! ";
         // Make the notification visible 
         notification.style.display = "block";
@@ -110,6 +109,7 @@ window.addToCart = (name, price, image) => {
 // Initial call to display the cart items when the page first loads 
 renderCart(); 
 
+// Hamburger menu inspired by https://www.youtube.com/watch?v=aNDqzlAKmZc and Google Gemini 
 // Getting the hamburger button and the menu links 
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('nav-links');
