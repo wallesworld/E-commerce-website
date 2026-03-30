@@ -1,107 +1,114 @@
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AEVORA</title> 
-   
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AEVORA</title>
 
-    <link rel="stylesheet" href="css/main.css"> 
-    <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-
-<header> 
+  <header>
     <nav>
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-    <a href="index.html" class="title-link">
-            <h1 class="aevora-title"> AEVORA </h1>
-    </a>
+      <a href="index.html" class="title-link">
+        <h1 class="aevora-title">AEVORA</h1>
+      </a>
 
-    <ul class="nav-links" id="nav-links">
+      <ul class="nav-links" id="nav-links">
         <li><a href="products.html"> PRODUCTS </a></li>
         <li><a href="about.html"> ABOUT </a></li>
         <li><a href="contact.html"> CONTACT </a></li>
-    </ul>
+      </ul>
 
-    <div class="nav-icons">
-        <a href="#"> <img src="images/whiteHeart.png" alt="Favorites" class="icon-img"> </a>
-        <a href="cart.html"> <img src="images/cart.png" alt="Shopping Cart" class="icon-img"> </a>
-        <a href="#"> <img src="images/profile.svg" alt="Profile" class="icon-img"> </a>
-    </div>
+      <div class="nav-icons">
+        <a href="#">
+          <img src="images/whiteHeart.png" alt="Favorites" class="icon-img" />
+        </a>
+        <a href="cart.html">
+          <img src="images/cart.png" alt="Shopping Cart" class="icon-img" />
+        </a>
+        <a href="#">
+          <img src="images/profile.svg" alt="Profile" class="icon-img" />
+        </a>
+      </div>
     </nav>
-</header>
+  </header>
 
-
-<main class="cart-container"> 
+  <main class="cart-container">
     <section class="cart-items-section">
-        <h1 class="shopping-cart"> Shopping Cart </h1> 
-        
-        <div class="cart-menu cart-grid-shared">
-            <p> Products </p>
-            <p> Description </p>
-            <p> Quantity </p>
-            <p> Price </p>
-            <p> Delete </p>
-        </div>
+      <h1 class="shopping-cart">Shopping Cart</h1>
 
-        <div id="cart-display"></div>
+      <div class="cart-menu cart-grid-shared">
+        <p>Products</p>
+        <p>Description</p>
+        <p>Quantity</p>
+        <p>Price</p>
+        <p>Delete</p>
+      </div>
+
+      <div id="cart-display"></div>
     </section>
 
     <aside class="order-summary">
-        <h2> Order Summary </h2>
-        <hr> 
-        <div class="summary-line">
-            <span> Shipping </span>
-            <span> 49 SEK </span>
-        </div>
-        <hr>
+      <h2>Order Summary</h2>
+      <hr />
+      <div class="summary-line">
+        <span> Shipping </span>
+        <span> 49 SEK </span>
+      </div>
+      <hr />
 
-        <div class="total-line">
-            <span> Total </span>
-            <span id="cart-total-price"> 0 SEK </span>
-        </div>
+      <div class="total-line">
+        <span> Total </span>
+        <span id="cart-total-price"> 0 SEK </span>
+      </div>
     </aside>
 
     <div id="cart-display"></div>
 
-<button class="checkout-btn"> PROCEED TO CHECKOUT</button>
+    <button class="checkout-btn">PROCEED TO CHECKOUT</button>
 
+    <a href="products.html" class="continue-shopping"> ← Continue Shopping </a>
+  </main>
 
-<a href="products.html" class="continue-shopping"> ← Continue Shopping </a>
-</main>
-
-<footer>
+  <footer>
     <div class="contact">
-        <h3>CONTACT</h3> 
-        <p>info@aevora.se</p>
-        <p>070-123 45 67</p>
-        <p>Jönköping Sweden</p>
+      <h3>CONTACT</h3>
+      <p>info@aevora.se</p>
+      <p>070-123 45 67</p>
+      <p>Jönköping Sweden</p>
     </div>
 
     <div class="footer-text-middle">
-        <p>About Us</p>
-        <p>Subscribe Now</p>
-        <p>Support</p>
-        <p>Terms & Conditions</p>
-        <p>Privacy Policy</p>
+      <p>About Us</p>
+      <p>Subscribe Now</p>
+      <p>Support</p>
+      <p>Terms & Conditions</p>
+      <p>Privacy Policy</p>
     </div>
 
     <div class="socials">
-        <img src="images/linkedInIcon.png">
-        <img src="images/facebookIcon.png">
-        <img src="images/instagramIcon.png">
+      <img src="images/linkedInIcon.png" />
+      <img src="images/facebookIcon.png" />
+      <img src="images/instagramIcon.png" />
     </div>
 
     <div class="logo">
-        <img src="images/aevoraLogo.png">
+      <img src="images/aevoraLogo.png" />
     </div>
 
     <p class="copy">&copy; 2026 AEVORA</p>
-</footer>
+  </footer>
+</body>
