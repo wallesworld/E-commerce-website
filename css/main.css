@@ -327,11 +327,6 @@ footer {
     color: rgb(0, 0, 0);
 }
 
-.footer p {
-    margin: 2px 0;
-    font-size: 0.9rem;
-}
-
 .contact h3 {
     text-decoration: underline;
     margin-bottom: 10px;
@@ -386,6 +381,30 @@ footer p {
     text-align: center;
     margin-top: 40px;
     font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .contacth3,
+    .contact p,
+    .footer-text-middle {
+        text-align: center;
+        justify-self: center;
+    }
+
+    .logo {
+        justify-self: center;
+    }
+
+    .copy {
+        grid-column: 1;
+        margin-top: 20px;
+    }
 }
 
 /* CSS FOR PRODUCTS PAGE */ 
